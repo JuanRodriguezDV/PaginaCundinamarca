@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="/Pagina Cundinamarca/styles/index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datos</title>
+    <script src="/Pagina Cundinamarca/script/index.js"></script>
   </head>
   <body onload="Datos()">
-    <label for="nombreOk">Nombre: </label>
-    <input type="text" id="nombreOk" />
-
-    <script src="../script/index.js"></script>
+    <div class="Menu_Principal">
+      <nav>
+        <ul>
+          <li><a href="/Pagina Cundinamarca/index.html">Inicio</a></li>
+          <li>
+            <a href="/Pagina Cundinamarca/pages/cundinamarca.html"
+              >Cundinamarca</a
+            >
+          </li>
+          <li><a href="/Pagina Cundinamarca/pages/boyaca.html">Boyaca</a></li>
+          <li>
+            <a href="/Pagina Cundinamarca/pages/Contactenos.html"
+              >Contactenos</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="Cuerpo_Principal2">
+      <h1>Datos De Contacto</h1>
+      <form class="Formulario" id="formularioContactenos">
+        <label for="nombreOk">Nombre: </label>
+        <input type="text" id="nombreOk" readonly />
+        <label for="celularOk">Celular: </label>
+        <input type="text" id="celularOk" readonly />
+        <label for="correoOk">Correo: </label>
+        <input type="text" id="correoOk" readonly />
+        <label for="regionOk">Region: </label>
+        <input type="text" id="regionOk" readonly />
+        <label for="masInfoOk">Quieres mas informacion?: </label>
+        <input type="text" id="masInfoOk" readonly />
+        <label for="tipoCOk">Como quieres que te contactemos?: </label>
+        <input type="text" id="tipoCOk" readonly />
+      </form>
+    </div>
   </body>
 </html>

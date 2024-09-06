@@ -35,14 +35,32 @@ nav li a{
 .Cuerpo_Principal{
     background-color: #0047AB;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     flex-direction: column;
     margin: 0 10%;
     padding: 5% 10% 5% 10%;
     text-align: justify;
+    overflow: hidden;
 }
 
+.Cuerpo_Principal2 {
+    background-color: #0047AB;
+    display:flex;
+    justify-content:space-between;
+    align-items:center ;
+    flex-direction: column;
+    margin: 0 10%;
+    padding: 5% 10% 5% 10%;
+    text-align: justify;
+}
+.Formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items:normal;
+    flex-direction: column;
+
+}
 
 .container-img  {
     display: flex;
@@ -60,6 +78,26 @@ nav li a{
     stroke: #000000 ;
     stroke-width: 0.3px;
     fill: #048f27;
+}
+
+.Formulario label{
+    color: #FFFFFF;
+}
+
+.Formulario input{
+    padding: 5;
+}
+.Formulario p{
+    color: #FFFFFF;
+    text-decoration: double;
+}
+
+#boyaca1,#boyaca2,#boyaca3,#cundi1,#cundi2,#cundi3{
+    padding: auto;
+    margin:5%;
+    text-align: center;
+    width: 95%;
+    height: auto;
 }
 
 #CO-BOY{

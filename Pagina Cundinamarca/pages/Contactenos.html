@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="../styles/index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactenos</title>
@@ -9,77 +10,83 @@
     <div class="Menu_Principal">
       <nav>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/cundinamarca.html">Cundinamarca</a></li>
-          <li><a href="pages/boyaca.html">Boyaca</a></li>
-          <li><a href="#Contactenos">Contactenos</a></li>
-          <li><a href="#SobreNosotros">Sobre Nosotros</a></li>
+          <li><a href="/Pagina Cundinamarca/index.html">Inicio</a></li>
+          <li>
+            <a href="/Pagina Cundinamarca/pages/cundinamarca.html"
+              >Cundinamarca</a
+            >
+          </li>
+          <li><a href="/Pagina Cundinamarca/pages/boyaca.html">Boyaca</a></li>
+          <li>
+            <a href="/Pagina Cundinamarca/pages/Contactenos.html"
+              >Contactenos</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
-    <form id="formularioContactenos"></form>
-      <label for="nombre">Ingrese su nombre completo: </label>
-      <input type="text" id="nombre" name="nombre" required />
-      <br />
-      <label for="celular">Ingrese su numero de celular: </label>
-      <input type="number" id="celular" name="celular" />
-      <br />
-      <label for="correo">Ingrese su correo electronico: </label>
-      <input type="email" id="correo" name="correo" required />
-      <br />
-      <label for="region">Seleccione su region de interes: </label>
-      <select name="region" id="region">
-        <option value="cundinamarca">Cundinamarca</option>
-        <option value="bogota">Bogota</option>
-        <option value="boyaca">Boyaca</option>
-        <option value="antioquia">Antioquia</option>
-        <option value="casanare">Casanare</option>
-      </select>
-      <p>Quieres mas informacion?</p>
-      <label>
-        Si<input
-          type="radio"
-          name="masInfo"
-          value="si"
-          id="si"
-          onclick="masInfo()"
-      /></label>
+    <div class="Cuerpo_Principal2">
+      <form
+        class="Formulario"
+        id="formularioContactenos"
+        onsubmit="validarNombre(event)"
+      >
+        <label for="nombre">Ingrese su nombre completo: </label>
+        <input type="text" id="nombre" name="nombre" required />
+        <br />
+        <label for="celular">Ingrese su numero de celular: </label>
+        <input type="number" id="celular" name="celular" required />
+        <br />
+        <label for="correo">Ingrese su correo electronico: </label>
+        <input type="email" id="correo" name="correo" required />
+        <br />
+        <label for="region">Seleccione su region de interes: </label>
+        <select name="region" id="region">
+          <option value="cundinamarca">Cundinamarca</option>
+          <option value="bogota">Bogota</option>
+          <option value="boyaca">Boyaca</option>
+          <option value="antioquia">Antioquia</option>
+          <option value="casanare">Casanare</option>
+        </select>
+        <p>Quieres mas informacion?</p>
+        <label>
+          Si
+          <input type="radio" name="masInfo" value="si" id="si" />
+        </label>
+        <span></span>
+        <label>
+          No
+          <input type="radio" name="masInfo" value="no" id="no" />
+        </label>
 
-      <label>
-        No
-        <input
-          type="radio"
-          name="masInfo"
-          value="no"
-          id="no"
-          onclick="masInfo()"
-        />
-      </label>
-
-      <div id="tipoContacto" hidden>
-        <p>Como prefires que te contactemos?</p>
-        <label for="tipoCc">por correo: </label>
-        <input type="checkbox" name="tipoContacto" id="tipoCc" value="correo" />
-        <label for="tipoCll">Por llamada: </label>
-        <input
-          type="checkbox"
-          name="tipoContacto"
-          id="tipoCll"
-          value="llamada"
-        />
-        <label for="tipoCw">Por whatsapp: </label>
-        <input
-          type="checkbox"
-          name="tipoContacto"
-          id="tipoCw"
-          value="whatsapp"
-        />
-      </div>
-      <input type="submit" id="enviar" onclick="validarNombre()" value="enviar">
-        
-      </input>
-      <input type="reset" value="Restablecer" />
-    </form>
-    <script src="../script/index.js"></script>
+        <div id="tipoContacto" hidden>
+          <p>Como prefires que te contactemos?</p>
+          <label for="tipoCc">por correo: </label>
+          <input
+            type="checkbox"
+            name="tipoContacto"
+            id="tipoCc"
+            value="correo"
+          />
+          <label for="tipoCll">Por llamada: </label>
+          <input
+            type="checkbox"
+            name="tipoContacto"
+            id="tipoCll"
+            value="llamada"
+          />
+          <label for="tipoCw">Por whatsapp: </label>
+          <input
+            type="checkbox"
+            name="tipoContacto"
+            id="tipoCw"
+            value="whatsapp"
+          />
+        </div>
+        <button type="submit">Enviar</button>
+        <input type="reset" value="Restablecer" />
+      </form>
+    </div>
+    <script src="/Pagina Cundinamarca/script/index.js"></script>
   </body>
 </html>
