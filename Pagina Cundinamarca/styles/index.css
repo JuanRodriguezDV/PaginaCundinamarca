@@ -42,6 +42,10 @@ nav li a{
     padding: 5% 10% 5% 10%;
     text-align: justify;
     overflow: hidden;
+    position: relative;
+}
+.Datos p{
+    color: #FFFFFF;
 }
 
 .Cuerpo_Principal2 {
@@ -91,6 +95,7 @@ nav li a{
     color: #FFFFFF;
     text-decoration: double;
 }
+
 
 #boyaca1,#boyaca2,#boyaca3,#cundi1,#cundi2,#cundi3{
     padding: auto;

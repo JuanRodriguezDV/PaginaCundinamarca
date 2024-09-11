@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodiversidad</title>
+
+    <script
+      type="module"
+      src="https://pyscript.net/releases/2024.2.1/core.js"
+    ></script>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <div class="Menu_Principal">
+      <nav>
+        <ul>
+          <li><a href="/Pagina Cundinamarca/index.html">Inicio</a></li>
+          <li>
+            <a href="/Pagina Cundinamarca/pages/cundinamarca.html"
+              >Cundinamarca</a
+            >
+          </li>
+          <li><a href="/Pagina Cundinamarca/pages/boyaca.html">Boyaca</a></li>
+          <li>
+            <a href="/Pagina Cundinamarca/pages/Contactenos.html"
+              >Contactenos</a
+            >
+          </li>
+          <li>
+            <a href="/Pagina Cundinamarca/pages/analisipy.html"
+              >Analisis Datos</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="Cuerpo_Principal">
+      <label for="nombre">Ingresar URL</label>
+      <br />
+      <input type="text" id="nombre" />
+      <br />
+      <button py-click="mostrar">Cargar datos y generar estadisticas</button>
+      <div class="Datos" id="datos">
+        <p id="Total"></p>
+        <p id="PromClima"></p>
+        <p id="ClimMin"></p>
+        <p id="ClimMax"></p>
+        <p id="THierbas"></p>
+        <p id="TANativos"></p>
+        <p id="TAInvasores"></p>
+        <p id="TFrailejones"></p>
+        <p id="TOrquideas"></p>
+      </div>
+      <div id="Contenido"></div>
+      <div id="Grafico"></div>
+      <script
+        type="py"
+        src="/Pagina Cundinamarca/script/datos_python.py"
+        config="/Pagina Cundinamarca/pyscript.json"
+      ></script>
+    </div>
+  </body>
+</html>
